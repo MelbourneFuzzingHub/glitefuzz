@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.coverage*
+Log/
+graphs_folder/
+results/
+*.log
+*.pdf
+*.png
