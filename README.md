@@ -31,7 +31,7 @@ MaxMatching  MST  SCC  STPL
 
 Feedback modes:
 
-- `regular`: algorithm-specific output novelty
+- `regular`: algorithm-specific output
 - `coverage`: new NetworkX lines reported by coverage.py
 - `combination`: regular and line-coverage feedback, both updated per input
 - `branch`: new NetworkX arcs reported by coverage.py
