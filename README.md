@@ -35,25 +35,6 @@ Feedback modes:
 - `coverage`: new NetworkX lines reported by coverage.py
 - `combination`: regular and line-coverage feedback, both updated per input
 - `branch`: new NetworkX arcs reported by coverage.py
-- `branchhit`: new AFL-style hit-count buckets for Python line transitions
+- `branchhit`: new AFL-style hit-count buckets for transitions
 - `none`: no mutation feedback
 
-With the disk scheduler, each retained graph is saved separately with its
-lineage, for example:
-
-```text
-id_000042,src_000017,op_add_node+modify_edge_weight.pkl
-```
-
-Bug-triggering graphs are stored under `bugs/` with a `bugs.csv` manifest.
-Corpus and bug files use Python pickle and should only be loaded from trusted
-sources.
-
-## Test
-
-```bash
-python3 -m unittest discover -s tests -v
-```
-
-GLiteFuzz is derived from
-[GraphFuzz](https://github.com/MelbourneFuzzingHub/graphfuzz).
